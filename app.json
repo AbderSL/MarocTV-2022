@@ -12,46 +12,58 @@
     
     
     "content": {
-        "page7": {
-          "title": "2M Maroc",
-          "url": "https://AbderSL.github.io/MarocTv/2M.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/2M.jpg"
-        },
-        "page8": {
-          "title": "Medi 1 TV",
-          "url": "https://AbderSL.github.io/MarocTv/Medi1TV.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/M1.jpg"
-        },
         "page1": {
-          "title": "Aloula",
-          "url": "https://AbderSL.github.io/MarocTv/Aloula.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/1.jpg"           
+          "title": "2M Maroc",
+          "url": "https://AbderSL.github.io/MarocTV-2022/2M.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/2M.jpg"
 
         },
         "page2": {
-          "title": "Almeghribia",
-          "url": "https://AbderSL.github.io/MarocTv/Almeghribia.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/5.jpg"
+          "title": "Aloula",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Aloula.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/1.jpg"           
+
         },
         "page3": {
-          "title": "Arriyadia",
-          "url": "https://AbderSL.github.io/MarocTv/Arriyadia.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/3.jpg"
+          "title": "Almeghribia",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Almeghribia.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/5.jpg"
         },
         "page4": {
-          "title": "Attaqafia",
-          "url": "https://AbderSL.github.io/MarocTv/Altaqafia.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/4.jpg"
+          "title": "Arriyadia",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Arriyadia.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"
         },
         "page5": {
-          "title": "Assadissa",
-          "url": "https://AbderSL.github.io/MarocTv/Assadissa.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/6.jpg"
+          "title": "Attaqafia",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Altaqafia.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/4.jpg"
         },
         "page6": {
+          "title": "Assadissa",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Assadissa.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/6.jpg"
+        },
+        "page7": {
           "title": "Tamazight",
-          "url": "https://AbderSL.github.io/MarocTv/Tamazight.html",
-          "img": "https://AbderSL.github.io/MarocTv/LOGO/8.jpg"
+          "url": "https://AbderSL.github.io/MarocTV-2022/Tamazight.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/8.jpg"
+	    },
+        "page8": {
+          "title": "Medi 1 TV",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Medi1TV.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M1.jpg"
+	    },
+        "page9": {
+          "title": "Chada tv",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Medi1TV.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M1.jpg"
+	    },
+        "page10": {
+          "title": "M24TV",
+          "url": "https://AbderSL.github.io/MarocTV-2022/Medi1TV.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M1.jpg"
+		  
         }
       }
 }
