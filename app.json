@@ -13,24 +13,24 @@
     
     "content": {
         "page1": {
-          "title": "2M Maroc",
+          "title": "2M Maroc القناة الثانية المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/2M.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/2M.jpg"
 
         },
         "page2": {
-          "title": "Aloula",
+          "title": "Aloula القناة الأولى المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/Aloula.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/1.jpg"           
 
         },
         "page3": {
-          "title": "Almeghribia",
+          "title": "Almeghribia قناة الخامسة المغربية 5",
           "url": "https://AbderSL.github.io/MarocTV-2022/Almeghribia.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/5.jpg"
         },
         "page4": {
-          "title": "Arriyadia",
+          "title": "Arriyadia قناة الرياضية المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/Arriyadia.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"
         },
@@ -40,7 +40,7 @@
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/4.jpg"
         },
         "page6": {
-          "title": "Assadissa",
+          "title": "Assadissa قناة محمد السادس",
           "url": "https://AbderSL.github.io/MarocTV-2022/Assadissa.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/6.jpg"
         },
@@ -50,7 +50,7 @@
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/8.jpg"
 	    },
         "page8": {
-          "title": "Medi 1 TV",
+          "title": "Medi 1 TV ميدي1",
           "url": "https://AbderSL.github.io/MarocTV-2022/Medi1TV.htmll",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M1.jpg"
 	    },
