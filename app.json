@@ -3,15 +3,17 @@
         "name": "مشاهدة جميع القنوات المغربية مباشرة",
         "color": "#5D7276"
     },
-    
-    
-    "ads":{
-        "bannerId": "1086368492013752_1086369305347004",
-        "interstitialId": "1086368492013752_1086891898628078"
-    },
-    
-    
-    "content": {
+  
+  
+  "ads":{
+     "ads_type": "FAB",
+      "bannerId": "1086368492013752_1086369305347004",
+      "interstitialId": "1086368492013752_1086891898628078",
+     "ironsource_id": "XXX"
+  },
+  
+  
+     "content": {
         "page1": {
           "title": "2M Maroc  الثانية المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/2M.html",
