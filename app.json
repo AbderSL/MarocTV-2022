@@ -6,7 +6,7 @@
   
   
   "ads":{
-     "ads_type": "admob",
+     "ads_type": "FAB",
       "bannerId": "808248186836325_808250310169446",
       "interstitialId": "808248186836325_808250450169432",
      "ironsource_id": "XXX"
