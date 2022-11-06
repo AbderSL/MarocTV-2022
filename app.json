@@ -6,10 +6,10 @@
   
   
   "ads":{
-     "ads_type": "ironsource",
-      "bannerId": "808248186836325_831645444496599X",
-      "interstitialId": "808248186836325_831645531163257X",
-     "ironsource_id": "172568e55"
+     "ads_type": "facebook",
+      "bannerId": "808248186836325_831645444496599",
+      "interstitialId": "808248186836325_831645531163257",
+     "ironsource_id": "172568e55x"
   },
   
   
