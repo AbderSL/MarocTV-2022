@@ -14,58 +14,63 @@
   
   
      "content": {
-        "page1": {
+        "page2": {
           "title": "2M Maroc  الثانية المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/2M.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/2M.jpg"
 
         },
-        "page2": {
+        "page3": {
           "title": "Aloula  الأولى المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/Aloula.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/1.jpg"           
 
         },
-        "page3": {
+        "page4": {
           "title": "Almeghribia  الخامسة المغربية 5",
           "url": "https://AbderSL.github.io/MarocTV-2022/Almeghribia.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/5.jpg"
         },
-        "page4": {
+        "page5": {
           "title": "Arriyadia  الرياضية المغربية",
           "url": "https://AbderSL.github.io/MarocTV-2022/Arriyadia.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"
         },
-        "page5": {
+        "page6": {
           "title": "Attaqafia  الرابعة التقافية",
           "url": "https://AbderSL.github.io/MarocTV-2022/Altaqafia.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/4.jpg"
         },
-        "page6": {
+        "page7": {
           "title": "Assadissa قناة محمد السادس",
           "url": "https://AbderSL.github.io/MarocTV-2022/Assadissa.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/6.jpg"
         },
-        "page7": {
+        "page8": {
           "title": "Tamazight تمازيغت",
           "url": "https://AbderSL.github.io/MarocTV-2022/Tamazight.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/8.jpg"
 	    },
-        "page8": {
+        "page9": {
           "title": "Medi 1 TV ميدي1",
           "url": "https://AbderSL.github.io/MarocTV-2022/Medi1TV.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M1.jpg"
 	    },
-        "page9": {
+        "page10": {
           "title": "Chada tv شدى",
           "url": "https://AbderSL.github.io/MarocTV-2022/Chada.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/Chada.jpg"
 	    },
-        "page10": {
+        "page11": {
           "title": "M24TV المغرب 24",
           "url": "https://AbderSL.github.io/MarocTV-2022/M24.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/M24.jpg"
-		  
+	
+	   },
+        "page1": {
+          "title": "بلجيكا  - المغرب ",
+          "url": "https://AbderSL.github.io/MarocTV-2022/marcop.html",
+          "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/31555.jpg"
         }
 
         }
