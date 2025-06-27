@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تضمين القناة</title>
+</head>
+<body>
+  <h2>القناة الثانية المغربية</h2>
+  <iframe width="560" height="315" src="https://www.elahmad.com/tv/watchtv.php?id=maroc2"
+          style="border:none;" allowfullscreen
+          allow="autoplay; fullscreen; picture-in-picture; encrypted-media">
+  </iframe>
+</body>
+</html>
