@@ -21,18 +21,18 @@
         },
         "page2": {
           "title": "Aloula  الأولى المغربية",
-          "url": "https://abdersl.github.io/MarocTV-2022/Aloula.html",
+          "url": "https://abdersl.github.io/MarocTV-2022/AL.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/1.jpg"           
 
         },
         "page3": {
           "title": "Almeghribia  الخامسة المغربية 5",
-          "url": "https://abdersl.github.io/MarocTV-2022/Almeghribia.html",
+          "url": "https://abdersl.github.io/MarocTV-2022/ALM.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/5.jpg"
         },
         "page4": {
           "title": "Arriyadia  الرياضية المغربية",
-          "url": "https://abdersl.github.io/MarocTV-2022/Arriyadia.html",
+          "url": "https://abdersl.github.io/MarocTV-2022/ARR.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"
         },
         "page7": {
@@ -47,7 +47,7 @@
         },
         "page5": {
           "title": "Tamazight تمازيغت",
-          "url": "https://abdersl.github.io/MarocTV-2022/Tamazight.html",
+          "url": "https://abdersl.github.io/MarocTV-2022/TAM.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/8.jpg"
 	    },
         "page9": {
@@ -76,6 +76,7 @@
 
         }
 }
+
 
 
 
