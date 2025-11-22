@@ -7,7 +7,7 @@
   
   "ads":{
      "ads_type": "ironsource",
-      "bannerId": "808248186836325_831645444496599",
+      "bannerId": "xx",
       "interstitialId": "x",
      "ironsource_id": "172568e55"
   },
@@ -81,6 +81,7 @@
 
         }
 }
+
 
 
 
