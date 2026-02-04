@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>تشغيل القناة</title>
-    <script>
-      // توجيه تلقائي إلى المتصفح الخارجي
-      window.onload = function () {
-        window.location.href = "https://livemedia.ma/aflam";
-      };
-    </script>
-  </head>
-  <body style="background-color: black; color: white; text-align: center;">
-    <h3>📺 يتم فتح القناة الآن...</h3>
-    <p>إذا لم يتم فتح الرابط تلقائيًا، <a href="https://livemedia.ma/aflam">اضغط هنا</a></p>
-  </body>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Live TV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+    }
+    video {
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+<video id="video" controls autoplay></video>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = "https://stream-lb.livemedia.ma/aflam/hls/stream_3/playlist.m3u8";
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  }
+</script>
+
+</body>
 </html>
+
+
+
+
