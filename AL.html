@@ -1,6 +1,42 @@
-<iframe width="560" height="315" 
-  src="https://www.elahmad.com/tv/arabic-tv-online.php?id=alaoulaeurope" 
-  style="border:none;" 
-  allowfullscreen allow="autoplay; fullscreen; picture-in-picture; xr-spatial-tracking; encrypted-media"></iframe>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Live TV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+    }
+    video {
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+<video id="video" controls autoplay></video>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = "https://stream-lb.livemedia.ma/alaoula/hls/stream_4/playlist.m3u8";
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  }
+</script>
+
+</body>
+</html>
+
 
 
