@@ -2,54 +2,42 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <title>Live TV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFLM</title>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background: black;
     }
-
     video {
       width: 100%;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 16 / 9;
-      border: 1px solid #fff;
-      border-radius: 8px;
+      height: 100vh;
+      background: black;
     }
   </style>
 </head>
 <body>
 
-  <video id="video" controls autoplay playsinline></video>
+<video id="video" controls autoplay></video>
 
-  <script>
-    const video = document.getElementById('video');
-    const videoSrc = 'https://cdn.live.easybroadcast.io/ts_corp/73_tamazight_tccybxt/corp/73_tamazight_tccybxt_240p/chunks_dvr.m3u8'; 
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = "https://stream-lb.livemedia.ma/tamazight/hls/stream_3/playlist.m3u8";
 
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(videoSrc);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        video.play();
-      });
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = videoSrc;
-      video.addEventListener('loadedmetadata', function () {
-        video.play();
-      });
-    } else {
-      alert("متصفحك لا يدعم تشغيل M3U8");
-    }
-  </script>
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  }
+</script>
 
 </body>
 </html>
+
+
+
+
