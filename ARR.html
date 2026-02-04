@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>تشغيل القناة</title>
-    <script>
-      // توجيه تلقائي إلى المتصفح الخارجي
-      window.onload = function () {
-        window.location.href = "https://www.elahmad.com/tv/arabic-tv-online.php?id=arryadia";
-      };
-    </script>
-  </head>
-  <body style="background-color: black; color: white; text-align: center;">
-    <h3>📺 يتم فتح القناة الآن...</h3>
-    <p>إذا لم يتم فتح الرابط تلقائيًا، <a href="https://www.elahmad.com/tv/arabic-tv-online.php?id=arryadia">اضغط هنا</a></p>
-  </body>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Live TV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    body {
+      margin: 0;
+      background: black;
+    }
+    video {
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+<video id="video" controls autoplay></video>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = "https://cdn.live.easybroadcast.io/abr_corp/73_arryadia_k2tgcj0/corp/73_arryadia_k2tgcj0_240p/chunks_dvr.m3u8?token=laqM8ZhE7kuYPh73dZ-ER-YrflHlnLnf_NIpAHy0sTQ&expires=1770195972&token_path=%2Fabr_corp%2F73_arryadia_k2tgcj0";
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  }
+</script>
+
+</body>
 </html>
-
-
-
-
