@@ -21,18 +21,18 @@
         },
         "page2": {
           "title": "Aloula  الأولى المغربية",
-          "url": "https://www.elahmad.ch/tv/arabic-tv-online.php?id=alaoulaeurope",
+          "url": "https://abdersl.github.io/MarocTV-2022/AL.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/1.jpg"           
 
         },
         "page3": {
           "title": "Almeghribia  الخامسة المغربية 5",
-          "url": "https://www.elahmad.ch/tv/arabic-tv-online.php?id=almaghribia",
+          "url": "https://abdersl.github.io/MarocTV-2022/ALM.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/5.jpg"
         },
         "page4": {
           "title": "Arriyadia  الرياضية المغربية",
-		  "url": "https://www.elahmad.ch/tv/arabic-tv-online.php?id=arryadia",
+		  "url": "https://abdersl.github.io/MarocTV-2022/ARR.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"
         },
         "page8": {
@@ -72,7 +72,7 @@
           },
 		 "page5": {
           "title": "Arriyadia TNT الرياضية المغربية",
-          "url": "https://www.elahmad.ch/tv/arabic-tv-online.php?id=arryadia",
+          "url": "https://abdersl.github.io/MarocTV-2022/ARRHD1.html",
           "img": "https://AbderSL.github.io/MarocTV-2022/LOGO/3.jpg"	
 	
 	
