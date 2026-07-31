@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -55,42 +56,99 @@
   .container {
     position: relative;
   }
+
+  .status {
+    padding: 12px;
+    font-size: 14px;
+    color: #ccc;
+  }
 </style>
 </head>
 <body>
 
 <header>
   <img id="logo" src="https://AbderSL.github.io/MarocTV-2022/LOGO/2M.jpg" alt="logo">
-  <h1 id="title">2M Maroc  الثانية المغربية</h1>
+  <h1 id="title">القناة</h1>
 </header>
 
 <div class="container">
   <span class="live">LIVE</span>
-  <video id="video" controls autoplay playsinline></video>
+  <!-- muted ضروري لكي يعمل autoplay تلقائياً في أغلب المتصفحات -->
+  <video id="video" controls autoplay playsinline muted></video>
 </div>
+
+<p class="status" id="status">جاري تحميل البث...</p>
 
 <script>
   // رابط البث
- // const STREAM_URL = "https://stream-lb.livemediama.com/2m/hls/master.m3u8"; // <-- ضع رابط القناة هنا
   const STREAM_URL = "https://d2qh3gh0k5vp3v.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n6pess5lwbghr/ec58ba37-5794-43e0-b4ab-5dfa2ba25331/3.m3u8";
-  const video = document.getElementById("video");
 
-  // في أغلب أجهزة Android الحديثة، HLS يعمل مباشرة داخل WebView أو Chrome
-  if (video.canPlayType("application/vnd.apple.mpegurl")) {
-    video.src = STREAM_URL;
-  } else if (Hls.isSupported()) {
-    // في حالة أردت دعم كل الأجهزة أضف مكتبة hls.js هنا
+  const video = document.getElementById("video");
+  const statusEl = document.getElementById("status");
+
+  function setStatus(text) {
+    if (statusEl) statusEl.textContent = text;
+  }
+
+  function tryAutoplay() {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          setStatus("");
+        })
+        .catch((err) => {
+          // بعض المتصفحات تمنع autoplay حتى مع muted، نعرض رسالة بديلة
+          setStatus("اضغط على زر التشغيل لبدء المشاهدة ▶️");
+          console.warn("Autoplay blocked:", err);
+        });
+    }
+  }
+
+  function loadWithHlsJs() {
     const script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/hls.js@1.4.8";
     script.onload = () => {
-      const hls = new Hls();
-      hls.loadSource(STREAM_URL);
-      hls.attachMedia(video);
+      if (typeof Hls !== "undefined" && Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(STREAM_URL);
+        hls.attachMedia(video);
+
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          tryAutoplay();
+        });
+
+        hls.on(Hls.Events.ERROR, (event, data) => {
+          if (data.fatal) {
+            setStatus("تعذر تشغيل البث، قد يكون الرابط منتهي الصلاحية ❌");
+            console.error("HLS fatal error:", data);
+          }
+        });
+      } else {
+        setStatus("متصفحك لا يدعم تشغيل هذا البث 😕");
+      }
+    };
+    script.onerror = () => {
+      setStatus("فشل تحميل مكتبة التشغيل، تحقق من الاتصال بالإنترنت");
     };
     document.body.appendChild(script);
-  } else {
-    alert("متصفحك لا يدعم تشغيل هذا البث 😕");
   }
+
+  function initPlayer() {
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // دعم HLS أصلي (Safari, iOS)
+      video.src = STREAM_URL;
+      video.addEventListener("loadedmetadata", tryAutoplay);
+      video.addEventListener("error", () => {
+        setStatus("تعذر تشغيل البث، قد يكون الرابط منتهي الصلاحية ❌");
+      });
+    } else {
+      // باقي المتصفحات: نحمّل hls.js أولاً ثم نتحقق من دعمه
+      loadWithHlsJs();
+    }
+  }
+
+  initPlayer();
 </script>
 
 </body>
