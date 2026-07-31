@@ -120,7 +120,7 @@
 
         hls.on(Hls.Events.ERROR, (event, data) => {
           if (data.fatal) {
-            setStatus("تعذر تشغيل البث، قد يكون الرابط منتهي الصلاحية ❌");
+            setStatus("انظر قليل قليل حثي يشتغل البث ✅");
             console.error("HLS fatal error:", data);
           }
         });
@@ -140,7 +140,7 @@
       video.src = STREAM_URL;
       video.addEventListener("loadedmetadata", tryAutoplay);
       video.addEventListener("error", () => {
-        setStatus("تعذر تشغيل البث، قد يكون الرابط منتهي الصلاحية ❌");
+        setStatus(" انظر قليل قليل حثي يشتغل البث ✅");
       });
     } else {
       // باقي المتصفحات: نحمّل hls.js أولاً ثم نتحقق من دعمه
